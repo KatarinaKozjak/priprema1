@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Priprema ka kolokvijum 1</title>
     </head>
     <body>
-        
+        <form method="post" style="display: flex;margin: auto;  width: 900px;height: 200px;background-color: azure;">
+            <div class="levi-deo" style="height: 170px; width: 900px;margin-top: 20px;margin-left: 10px;">
+                <label for="ocena">Ocena : </label>
+                <input type="number" id="ocena"><br><br>
+                <label for="br-indx">Broj indexa : </label>
+                <input type="text" id="br-indx"><br><br>
+                <label for="rBr-izlaska">Redni broj izlaska na ispit : </label>
+                <select id="rBr-izlaska">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="desni-deo" style="height: 170px; width: 900px;margin-top: 20px;">
+               <label for="datum">Datum izlaska na ispit :</label>
+               <input type="date" id="datum"><br><br>
+               <label>Rok :</label>
+               <input type="radio" id="rok1" name="rok" value="1">
+               <label for="rok1">Januar</label>
+               <input type="radio" id="rok2" name="rok" value="2">
+               <label for="rok2">Februar</label>
+               <input type="radio" id="rok3" name="rok" value="3">
+               <label for="rok3">Jun</label>
+               <input type="radio" id="rok4" name="rok" value="4">
+               <label for="rok4">Jul</label><br><br>
+               <input type="checkbox" id="status" value="false">
+               <label for="status">Polozio/la</label><br><br>
+               <button type="button" id="dugme" style="width: 400px;">Posalji</button>
+            </div>
+        </form>
     </body>
 </html>
